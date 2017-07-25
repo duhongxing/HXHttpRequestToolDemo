@@ -31,6 +31,7 @@
 		221CF2901F27441D00314A2E /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CF27D1F27441C00314A2E /* UIRefreshControl+AFNetworking.m */; };
 		221CF2911F27441D00314A2E /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CF27F1F27441C00314A2E /* UIWebView+AFNetworking.m */; };
 		221CF2921F27441D00314A2E /* NSString+Hashing.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CF2821F27441C00314A2E /* NSString+Hashing.m */; };
+		221CF2961F27470900314A2E /* HXHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CF2951F27470900314A2E /* HXHttpTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,8 @@
 		221CF27F1F27441C00314A2E /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		221CF2811F27441C00314A2E /* NSString+Hashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hashing.h"; sourceTree = "<group>"; };
 		221CF2821F27441C00314A2E /* NSString+Hashing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hashing.m"; sourceTree = "<group>"; };
+		221CF2941F27470900314A2E /* HXHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXHttpTool.h; sourceTree = "<group>"; };
+		221CF2951F27470900314A2E /* HXHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXHttpTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,7 @@
 		221CF2261F2743D600314A2E /* HXHttpRequestToolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				221CF2931F27470900314A2E /* Tool */,
 				221CF25B1F27440A00314A2E /* Vendor */,
 				221CF22A1F2743D600314A2E /* AppDelegate.h */,
 				221CF22B1F2743D600314A2E /* AppDelegate.m */,
@@ -264,6 +268,15 @@
 				221CF2821F27441C00314A2E /* NSString+Hashing.m */,
 			);
 			path = MD5;
+			sourceTree = "<group>";
+		};
+		221CF2931F27470900314A2E /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				221CF2941F27470900314A2E /* HXHttpTool.h */,
+				221CF2951F27470900314A2E /* HXHttpTool.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +428,7 @@
 				221CF2291F2743D600314A2E /* main.m in Sources */,
 				221CF2891F27441D00314A2E /* AFAutoPurgingImageCache.m in Sources */,
 				221CF2851F27441D00314A2E /* AFSecurityPolicy.m in Sources */,
+				221CF2961F27470900314A2E /* HXHttpTool.m in Sources */,
 				221CF2861F27441D00314A2E /* AFURLRequestSerialization.m in Sources */,
 				221CF28B1F27441D00314A2E /* AFNetworkActivityIndicatorManager.m in Sources */,
 				221CF2871F27441D00314A2E /* AFURLResponseSerialization.m in Sources */,
@@ -656,6 +670,7 @@
 				221CF2531F2743D600314A2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		221CF2541F2743D600314A2E /* Build configuration list for PBXNativeTarget "HXHttpRequestToolDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -664,6 +679,7 @@
 				221CF2561F2743D600314A2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		221CF2571F2743D600314A2E /* Build configuration list for PBXNativeTarget "HXHttpRequestToolDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -672,6 +688,7 @@
 				221CF2591F2743D600314A2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
